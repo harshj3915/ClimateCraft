@@ -1,24 +1,24 @@
 
-import Head from 'next/head';
+import Head from "next/head";
 import "../public/assets/css/style.css"
 
 const WeatherPage = ({ weatherData }) => {
     const { location, current } = weatherData;
 
-    let d = current.air_quality['us-epa-index'];
+    let d = current.air_quality["us-epa-index"];
     if (isNaN(d) || d < 1 || d > 5) {
         d = 5;
     }
 
     const getAqiMessage = (index) => {
         if (index === 1) {
-            return 'Good';
+            return "Good";
         } else if (index === 2 || index === 3) {
-            return 'Medium';
+            return "Medium";
         } else if (index === 5 || index === 4) {
-            return 'Bad';
+            return "Bad";
         } else {
-            return 'Bad';
+            return "Bad";
         }
     };
     return (
@@ -29,7 +29,7 @@ const WeatherPage = ({ weatherData }) => {
                 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                 <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet" />
             </Head>
-            <main className=' mt-10'>
+            <main className=" mt-10">
                 <article className="container text-sm">
                     <div className="content-left">
                         <section className="section current-weather" aria-label="current-weather" data-current-weather>
@@ -60,7 +60,7 @@ const WeatherPage = ({ weatherData }) => {
                     <div className="content-right">
                         <section className="section highlights" aria-labelledby="highlights-label" data-highlights>
                             <div className="card card-lg">
-                                <h2 className="title-2" id="highlights-label">Today's Highlights</h2>
+                                <h2 className="title-2" id="highlights-label">Today&apos;s Highlights</h2>
                                 <div className="highlight-list">
                                     <div class="highlight-list">
                                         <div class="card card-sm highlight-card one">

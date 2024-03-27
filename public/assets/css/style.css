@@ -24,7 +24,7 @@
   --black-alpha-10: hsla(0, 0%, 0%, 0.587);
   --gradient-1: linear-gradient(180deg, hsla(270, 5%, 7%, 0) 0%, hsla(270, 5%, 7%, 0.8) 65%, hsl(270, 5%, 7%) 100%);
   --gradient-2: linear-gradient(180deg, hsla(260, 5%, 12%, 0) 0%, hsla(260, 5f%, 12%, 0.8) 65%, hsl(260, 5%, 12%) 100%);
-  --ff-nunito-sans: 'Nunito Sans', sans-serif;
+  --ff-nunito-sans: "Nunito Sans", sans-serif;
   --heading: 2.8rem;
   --title-1: 1rem;
   --title-2: 0.9rem;
@@ -63,14 +63,14 @@
 }
 
 @font-face {
-  font-family: 'Material Symbols Rounded';
+  font-family: "Material Symbols Rounded";
   font-style: normal;
   font-weight: 400;
-  src: url("../font/material-symbol-rounded.woff2") format('woff2');
+  src: url("../font/material-symbol-rounded.woff2") format("woff2");
 }
 
 .m-icon {
-  font-family: 'Material Symbols Rounded';
+  font-family: "Material Symbols Rounded";
   font-weight: normal;
   font-style: normal;
   font-size: 2.4rem;
