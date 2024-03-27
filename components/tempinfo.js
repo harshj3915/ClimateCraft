@@ -1,5 +1,6 @@
 
 import Head from 'next/head';
+import "../public/assets/css/style.css"
 
 const WeatherPage = ({ weatherData }) => {
     const { location, current } = weatherData;
@@ -47,7 +48,7 @@ const WeatherPage = ({ weatherData }) => {
                                         
                                     </li>
                                     <li className="meta-item">
-                                        <span className="m-icon">location_on</span>
+                                        <span className="m-icon pr-10">location_on</span>
                                         <p className="title-2 meta-text font-bold">
                                             {location.name},   {location.region},   {location.country}
                                         </p>
